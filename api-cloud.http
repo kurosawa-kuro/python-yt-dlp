@@ -1,0 +1,27 @@
+### YouTube Subtitle API Tests
+@baseUrl = https://python-yt-dlp.onrender.com
+
+###
+
+### Get subtitle (replace VIDEO_ID with actual YouTube video ID)
+GET {{baseUrl}}/subtitle?url=https://youtu.be/_jmorYygMZM?si=YDlwoTWAyWwNyZEF
+
+###
+
+### Get subtitle - raw VTT format
+GET {{baseUrl}}/subtitle?url=https://youtu.be/y6dSZIXVjZg?si=okdQjdwdRB6iAdnd&format=vtt
+
+###
+
+### Error: missing url parameter (expects 422)
+GET {{baseUrl}}/subtitle
+
+###
+
+### Swagger UI
+GET {{baseUrl}}/docs
+
+###
+
+### OpenAPI JSON
+GET {{baseUrl}}/openapi.json
